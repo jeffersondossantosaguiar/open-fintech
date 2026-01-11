@@ -17,8 +17,8 @@
 
 ## 3. Financial Integrity (The Ledger)
 
-- **Monetary Values:** Use `BigInt` or `number` (integers only) to represent cents.
-- **Balance Calculation:** Balance is a derived state. Use a function to sum `transactions`.
+- **Monetary Values:** Use `BigInt` to represent cents.
+- **Balance Calculation:** Balance is a derived state. Use a function to sum `transactions` .
 - **Transactions (ACID):** Operations involving multiple records (e.g., `User` + `Account`) MUST use Prisma's `$transaction`.
 
 ## 4. Security & Authentication
